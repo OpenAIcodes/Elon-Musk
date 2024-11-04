@@ -1,1 +1,27 @@
+==DOGE-FILES :> DOGE MASCOT _ BEPO THE DOG - MASCOT-LOG (DOGE-MSC)
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:: FILE_ENTRY : BEPO (Mascot_ID_0xDG-BPO1) :::::::::::::::::::::::::::::::::::
+
+>> Bepo-Proto.vx:
+    01000010 01100101 01110000 01101111 00110010 01110100 01110011 00110110
+    [MASCOT_STRUCTURE]:{INIT_BYTE}[0xBPO4]
+    - Generate_Pipeline[play-seq](function){bark_seq=3072bits};
+
+>> Bepo_ID : Doge_Type(11) ::
+    [MASCOT_VECTORS]:    
+    - Layer[50] -> Depth(10) - Positional_Enc[2048bit]
+    - Split_: Woof_Tok:0x3C9B , Mode:Init-{3xChewToy} 
+    - Classify_[Mascot]:[4B][Hash_BPO]
+
+>> Action_Classification::RUN <<Encrypt__BEPO>>
+    Mascot.Bepo[VX-1024]:
+    - Bepo_mem_Vec{init_load#}[snf0]
+    - Positional_Data(Marker_2G-17)#
+    - Hashing BEPO_CALL>[Bark.Loop](file=BepoSound.vx)#
+    
+:: Bepo-Behavioral_Protocol (Fun_SEQ=ACTIVE) :::
+    -> Parameters:
+       *Core_Play_Type:[DOGE-SPIRIT][Tail-Wag-2048]
+       *Command-to-Play: {user_input_mem->Bepo_Run}[exec_chase.exe]
+       -> Validate:[Exec+Fun_3072]
